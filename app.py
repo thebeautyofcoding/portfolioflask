@@ -8,7 +8,7 @@ from db import db
 from ma import ma
 from dotenv import load_dotenv
 from flask_cors import CORS, cross_origin
-import flask_uploads
+
 from libs.image_helper import IMAGE_SET
 from resources.user import UserRegister, UserLogin,UserLogout
 from resources.portfolio import Portfolio,PutPortfolio,GetPortfolio, DeletePortfolio, PortfolioList
