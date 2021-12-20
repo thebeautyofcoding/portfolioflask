@@ -30,7 +30,6 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = datetime.timedelta(hours=1)
 app.config['JWT_EXPIRATION_DELTA'] = datetime.timedelta(days=10)
 
-flask_uploads.patch_request_class(app, 10*1024*1024)
 flask_uploads.configure_uploads(app, IMAGE_SET)
 api = Api(app)
 jwt = JWTManager(app)
